@@ -38,17 +38,45 @@ public class Main {
     // 5. Takes two user inputed numbers and prints their multiplication (int)
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Enter the first number: ");
+    System.out.print("Enter the first number: ");
     int num1 = Integer.parseInt(scanner.nextLine());
 
-    System.out.println("Enter the second number: ");
+    System.out.print("Enter the second number: ");
     int num2 = Integer.parseInt(scanner.nextLine());
 
     int multiplication = num1 * num2;
     System.out.println(multiplication);
+    System.out.println();
 
+    // 6. Takes two user inputed numbers and prints multiple operation results
+    System.out.print("Enter the first number: ");
+    num1 = Integer.parseInt(scanner.nextLine());
 
-    // 6.
+    System.out.print("Enter the second number: ");
+    num2 = Integer.parseInt(scanner.nextLine());
 
+    sum = num1 + num2;
+    int subtraction = num1 - num2;
+    multiplication = num1 * num2;
+    division = num1 / num2;
+    int remainder = num1 % num2;
+
+    System.out.println(sum);
+    System.out.println(subtraction);
+    System.out.println(multiplication);
+    System.out.println(division);
+    System.out.println(remainder);
+    System.out.println();
+
+    // 7. Takes an user inputed number and prints it multiplication table up to 10
+    System.out.print("Enter a number: ");
+    num1 = Integer.parseInt(scanner.nextLine());
+
+    for (int i = 1; i < 11; i++) {
+        System.out.println(num1 + " x " + i + " = " + num1 * i);
+    }
+    System.out.println();
+
+    // 8. 
     }
 }    
